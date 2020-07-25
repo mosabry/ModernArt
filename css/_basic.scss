@@ -1,0 +1,42 @@
+/*=============================
+
+        Default Values
+
+Font: Reef, sans serif
+
+Colors:
+1. Black Pearl: #1e272e;
+2. Chrome Yellow: #ffa801;
+3. Grey: #777;
+
+==============================*/
+
+
+/*------------------------------
+        Basic setup
+------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Reef;
+    src: url(../fonts/Reef.otf);
+}
+
+body {
+    font-family: "Reef", sans-serif;
+    color: $Black-Pearl;
+    text-rendering: optimizeLegibility;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}

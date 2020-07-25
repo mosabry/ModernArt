@@ -1,0 +1,45 @@
+/*------------------------------
+            Footer
+------------------------------*/
+
+footer {
+    background-color: $Black-Pearl;
+    color: #fff;
+    
+    div {
+        max-width: 1400px;
+        margin: auto;
+        
+        p {
+            padding: 20px;
+            font-size: 18px;
+            
+            a {
+                color: $Chrome-Yellow;
+            }
+        }
+    }
+}
+
+
+/*------------------------------
+        Back to Top
+------------------------------*/
+.top {
+    position: fixed;
+    right: 3%;
+    bottom: 9%;
+    display: block;
+    background-color: $Chrome-Yellow;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 1px $Grey;
+    transition: all .2s linear;
+    
+    &:hover {
+        background-color: $Black-Pearl;
+        border-radius: 50%;
+    }
+}
+

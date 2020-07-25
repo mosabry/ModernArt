@@ -1,0 +1,65 @@
+/*------------------------------
+        Artist Section
+------------------------------*/
+
+.artists-text {
+    display: flex;
+    max-width: 1400px;
+    margin: 50px auto;
+    justify-content: space-between;
+    border-bottom: 2px solid $Grey;
+    padding-bottom: 35px;
+
+    .artist {
+        margin-right: 50px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .artist-name {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+
+            .shape {
+                width: 16px;
+                height: 32px;
+                position: relative;
+                background-color: $Chrome-Yellow;
+                margin-right: 30px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    right: -16px;
+                    border: 0;
+                    width: 0;
+                    height: 0;
+                    border-left: 16px solid $Chrome-Yellow;
+                    border-top: 16px solid transparent;
+                    border-bottom: 16px solid transparent;
+                }
+            }
+
+            h3 {
+                text-transform: uppercase;
+                font-size: 22px;
+            }
+        }
+
+        a {
+            font-size: 18px;
+            color: $Chrome-Yellow;
+            transition: all .3s ease;
+
+            &:hover {
+                color: $Black-Pearl;
+            }
+        }
+
+        p {
+            margin-bottom: 7px
+        }
+    }
+}

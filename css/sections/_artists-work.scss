@@ -1,0 +1,40 @@
+/*------------------------------
+        Artist Work
+------------------------------*/
+
+.artist-work {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: right;
+    margin-bottom: 50px;
+    
+    .work-pictures {
+        margin: 15px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        img {
+            filter: grayscale(100%);
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            border: 4px solid transparent;
+            
+            &:hover {
+                filter: grayscale(0);
+                border: 4px solid $Chrome-Yellow;
+                transform: scale(1.1);
+            }
+        }
+    }
+    
+    a {
+        font-size: 20px;
+        color: $Chrome-Yellow;
+        transition: all .3s ease-in-out;
+        
+        &:hover {
+            color: $Black-Pearl;
+        }
+    }
+}
